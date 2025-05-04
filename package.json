@@ -1,0 +1,36 @@
+{
+  "name": "mcp-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "softjapan <softjapan@outlook.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src",
+    "dev:watch": "tsx --watch src",
+    "start": "node dist/index.js",
+    "build": "tsc ",
+    "lint:fix": "eslint --fix ./src"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.39.0",
+    "@modelcontextprotocol/sdk": "1.8.0",
+    "dotenv": "16.4.7",
+    "express": "^5.1.0",
+    "openai": "4.90.0",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.23.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "22.13.14",
+    "eslint": "9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-import-resolver-typescript": "^4.2.2",
+    "eslint-plugin-import": "^2.31.0",
+    "tsx": "4.19.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.27.0"
+  },
+  "repository": "https://github.com/SoraKumo001/mcp-agent"
+}
